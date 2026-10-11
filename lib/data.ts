@@ -2,12 +2,12 @@
 
 export const profile = {
   name: "Muhammad Ihsanzaki",
-  role: "Software Engineer",
-  location: "Jakarta, Indonesia",
+  role: "IT Specialist & Software Engineer",
+  location: "Tangerang, Indonesia",
   status: "sedang terbuka untuk kolaborasi",
-  tagline: "Saya merapikan sistem yang berantakan menjadi sesuatu yang bisa diandalkan.",
-  bio: "Lima tahun terakhir saya menghabiskan waktu di persimpangan backend dan infrastruktur — membangun API yang tahan beban, memperbaiki pipeline data yang rewel, dan sesekali turun ke frontend saat produk membutuhkannya. Saya paling senang saat mengubah sistem yang rapuh menjadi sesuatu yang bisa dipercaya orang lain.",
-  email: "halo@ajawx.xyz",
+  tagline: "Saya merapikan sistem, infrastruktur jaringan, dan layanan IT menjadi sesuatu yang bisa diandalkan.",
+  bio: "Berpengalaman dalam mengelola infrastruktur IT rumah sakit, perancangan topologi jaringan, konfigurasi server, hingga pengembangan aplikasi database dan dukungan operasional. Memiliki kombinasi keahlian teknis jaringan, backend, serta pengalaman teknis dalam pelayanan dan pemasaran digital.",
+  email: "syntac98@gmail.com",
   socials: [
     { label: "GitHub", href: "https://github.com/" },
     { label: "LinkedIn", href: "https://linkedin.com/" },
@@ -16,9 +16,9 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "5+", label: "tahun pengalaman" },
-  { value: "27", label: "proyek diluncurkan" },
-  { value: "4", label: "tim yang pernah dibantu" },
+  { value: "3+", label: "tahun pengalaman" },
+  { value: "10+", label: "proyek & sistem ditangani" },
+  { value: "3", label: "industri pernah dibantu" },
 ];
 
 export type Project = {
@@ -34,83 +34,72 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "ledger",
+    id: "simrs-core",
     index: "01",
-    title: "Ledger — mesin rekonsiliasi transaksi",
+    title: "SIMRS Core — Sistem Informasi Manajemen Rumah Sakit",
     year: "2025",
     summary:
-      "Sistem rekonsiliasi yang memproses jutaan transaksi harian antar tiga penyedia pembayaran, menekan selisih manual dari 6 jam menjadi di bawah 4 menit.",
-    role: "Lead backend engineer",
-    stack: ["Go", "PostgreSQL", "Kafka", "Redis"],
+      "Arsitektur backend dan infrastruktur terintegrasi untuk pendaftaran pasien, rekam medis elektronik (EMR), dan modul farmasi yang menangani ribuan antrean harian tanpa downtime.",
+    role: "Lead Backend Engineer & Infrastructure Architect",
+    stack: ["Go", "PostgreSQL", "Docker", "Redis", "HL7/FHIR"],
     href: "#",
   },
   {
-    id: "signal",
+    id: "gi-database",
     index: "02",
-    title: "Signal — dashboard observability tim kecil",
+    title: "Sistem Manajemen Anggota & Kegiatan Galeri Investasi",
     year: "2024",
     summary:
-      "Alat monitoring ringan untuk tim yang belum butuh Datadog: metrik, log, dan alert dalam satu tampilan, deploy dalam satu perintah.",
-    role: "Full-stack, solo project",
-    stack: ["Next.js", "TypeScript", "ClickHouse"],
+      "Aplikasi database terpusat untuk mencatat, mengelola, dan memantau seluruh data anggota serta rekam kegiatan organisasi Galeri Investasi secara terstruktur.",
+    role: "Database & Backend Developer",
+    stack: ["MySQL", "PHP", "Laravel", "Bootstrap"],
     href: "#",
   },
   {
-    id: "routewise",
+    id: "seminar-system",
     index: "03",
-    title: "Routewise — optimasi rute pengiriman",
-    year: "2023",
+    title: "Sistem Pendaftaran & E-Sertifikat Seminar Open Account",
+    year: "2024",
     summary:
-      "Layanan optimasi rute untuk armada pengiriman skala menengah, mengurangi total jarak tempuh harian sekitar 18% melalui algoritma routing kustom.",
-    role: "Backend engineer",
-    stack: ["Python", "OR-Tools", "PostGIS"],
-    href: "#",
-  },
-  {
-    id: "atlas",
-    index: "04",
-    title: "Atlas — migrasi arsitektur monolith ke services",
-    year: "2022",
-    summary:
-      "Memecah monolith lima tahun menjadi delapan service tanpa downtime yang terasa oleh pengguna, dikerjakan bertahap selama sembilan bulan.",
-    role: "Backend engineer",
-    stack: ["Ruby", "Go", "gRPC", "Docker"],
+      "Layanan pendaftaran peserta massal dan pencetakan e-sertifikat otomatis untuk seminar investasi skala besar dan pembukaan akun investor.",
+    role: "IT Event Operations & Web Developer",
+    stack: ["PHP", "MySQL", "TCPDF", "Google Sheets API"],
     href: "#",
   },
 ];
 
 export const skillGroups = [
   {
-    category: "Bahasa & runtime",
-    items: ["TypeScript", "Go", "Python", "Ruby", "Node.js"],
+    category: "Jaringan & Infrastruktur",
+    items: ["Topologi Jaringan", "MikroTik / Cisco", "Server Administration", "Linux/Windows Server"],
   },
   {
-    category: "Data & infrastruktur",
-    items: ["PostgreSQL", "Redis", "Kafka", "Docker", "AWS"],
+    category: "Pengembangan & Database",
+    items: ["MySQL", "PostgreSQL", "PHP", "JavaScript", "HTML/CSS"],
   },
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS"],
+    category: "Digital & Operasional",
+    items: ["SEO & Marketing Analytics", "Technical Customer Support", "Troubleshooting & Maintenance"],
   },
 ];
 
 export const experience = [
   {
-    period: "2023 — sekarang",
-    company: "Nexora Financial",
-    role: "Senior Software Engineer",
-    detail: "Memimpin tim backend pembayaran, bertanggung jawab atas uptime dan skalabilitas sistem rekonsiliasi.",
+    period: "2025 — sekarang",
+    company: "Rumah Sakit Melati",
+    role: "IT Staff",
+    detail: "Bertanggung jawab atas operasional dan infrastruktur IT rumah sakit, meliputi perancangan ulang topologi jaringan, konfigurasi dan pemeliharaan server, pengelolaan berbagai proyek sistem informasi, serta optimasi SEO untuk tim marketing.",
   },
   {
-    period: "2021 — 2023",
-    company: "Studio Delapan",
-    role: "Software Engineer",
-    detail: "Membangun produk logistik dari nol bersama tim tiga orang, dari prototipe sampai skala nasional.",
+    period: "2023 — 2024",
+    company: "Mandiri Toner",
+    role: "Technical & Store Staff",
+    detail: "Mengelola operasional teknis toko printer di Bandung selama 1 tahun 2 bulan, menangani pemeliharaan perangkat, inventarisasi, dan dukungan teknis untuk pelanggan.",
   },
   {
-    period: "2019 — 2021",
-    company: "Bitwork Labs",
-    role: "Backend Engineer",
-    detail: "Mengerjakan migrasi arsitektur dan pipeline data untuk klien enterprise di sektor ritel.",
+    period: "2022 — 2023",
+    company: "Onix Gaming (Cengkareng, Jakarta)",
+    role: "Customer Service Representative",
+    detail: "Melayani dan menyelesaikan kendala transaksi pengguna platform top-up game selama 6 bulan, memastikan kepuasan pelanggan dan efisiensi penanganan tiket kendala.",
   },
 ];
